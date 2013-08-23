@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "customfont";
+    src: url("../fonts/arial.ttf") format("truetype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+    }
+    textarea {
+        font-family: "customfont" !important; 
+        font-size:30px;
+    }
