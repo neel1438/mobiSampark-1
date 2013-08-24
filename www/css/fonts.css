@@ -29,23 +29,23 @@
             the location of your file `my_css.css` */ 
     } 
 
-    .pun{
+    .pan{
         font-family: "punjabi" !important; 
-        font-size:30px;
+        font-size:20px !important;
     }
     .tam{
         font-family: "tamil" !important; 
-        font-size:30px;
+        font-size:20px !important;
     }    
     .hin{
         font-family: "hindi" !important; 
-        font-size:30px;
+        font-size:20px !important;
     }
     .tel{
         font-family: "telugu" !important; 
-        font-size:30px;
+        font-size:20px !important;
     }    
     .urd{
         font-family: "urdu" !important; 
-        font-size:30px;
+        font-size:20px !important;
     }         

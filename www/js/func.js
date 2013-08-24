@@ -4,4 +4,7 @@ $(document).ready(function(){
 		updateOptions();
 		optionChangeHelper();
 	});
+
+	updateOptions();
+	optionChangeHelper();
 });
