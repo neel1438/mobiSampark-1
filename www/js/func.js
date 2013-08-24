@@ -19,7 +19,7 @@ $(document).ready(function(){
 		// curl -d "srcLang=hin&tgtLang=pan&text=SOMETHINGSOMETHINGSOMETHING" http://10.4.8.55/samparkapi/web/restapi.php/query/translate
 		var baseURL_post = "http://10.4.8.55/samparkapi/web/restapi.php/query/translate";
 		var baseURL_get = "http://10.4.8.55/samparkapi/web/restapi.php/query/translation";
-		var waitString = "Please wait while we translate the sentence for you.........";
+		var waitString = "   ";
 
 		var count=0;
 		var intervalVariable;
@@ -40,12 +40,6 @@ $(document).ready(function(){
 				toggleLoader();
 				toggleInputState();
 
-				//Make the target language as source language
-				$("#source_language").val($("#target_language").val());
-				$("#source_language").selectmenu("refresh",true);
-				updateOptions();
-				optionChangeHelper();
-
 				}
 			});
 		}
@@ -61,7 +55,15 @@ $(document).ready(function(){
 
 				//Start the timer event which checks for result every 1.5 second
 				intervalVariable = window.setInterval(checkResult, 2000);
+				
+				//Replace the default string by some waitString. In a future version, the waitString could be something in target language
 				$("#INPUT").val(waitString);
+
+				//Make the target language as source language
+				$("#source_language").val($("#target_language").val());
+				$("#source_language").selectmenu("refresh",true);
+				updateOptions();
+				optionChangeHelper();
 			});
 
 		//Keep Querying the server till status complete
