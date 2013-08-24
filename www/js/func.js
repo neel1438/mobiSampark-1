@@ -16,9 +16,15 @@ $(document).ready(function(){
 
 		//Submit Translation Job
 		var current_translation_id = null;
-		// curl -d "srcLang=hin&tgtLang=pan&text=SOMETHINGSOMETHINGSOMETHING" http://10.4.8.55/samparkapi/web/restapi.php/query/translate
-		var baseURL_post = "http://10.4.8.55/samparkapi/web/restapi.php/query/translate";
-		var baseURL_get = "http://10.4.8.55/samparkapi/web/restapi.php/query/translation";
+
+		//When being used only inside the IIIT network
+		// var baseURL_post = "http://10.4.8.55/samparkapi/web/restapi.php/query/translate";
+		// var baseURL_get = "http://10.4.8.55/samparkapi/web/restapi.php/query/translation";
+
+		//When being used outside the IIIT network, and will also work inside the IIIT network without the proxy
+		var baseURL_post = "http://web.iiit.ac.in/SAMPARK//samparkapi/web/restapi.php/query/translate";
+		var baseURL_get = "http://web.iiit.ac.in/SAMPARK/samparkapi/web/restapi.php/query/translation";
+
 		var waitString = "   ";
 
 		var count=0;
