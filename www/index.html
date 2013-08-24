@@ -71,9 +71,12 @@
             </div>
             <div data-role="fieldcontain">
                 <textarea name="" id="INPUT" placeholder="Please enter the string to translate..."
-                data-mini="true" style="width:100%"></textarea>
+                data-mini="true" style="width:100%; height"></textarea>
             </div>
             <div data-role="fieldcontain">
+            <div style=" text-align:center" id="LOADER">
+                <img style="width: 16px; height: 16px" src="img/ajax-loader.gif">
+            </div>                
                 <select name="toggleswitch1" id="notation" data-theme="b" data-role="slider"
                 data-mini="true">
                 <option value="wx">
@@ -116,7 +119,7 @@
                 </option>          
             </select>
         </div>
-        <input type="submit" data-theme="b" value="Translate" data-mini="true">
+        <input id="TRANSLATE" type="submit" data-theme="b" value="Translate" data-mini="true">
     </div>
 </div>
 

@@ -43,3 +43,29 @@ function updateOptions(){
     }        
 }
 
+function toggleLoader(){
+    if( $("#LOADER").css("display") == "none"){
+            $("#LOADER").css("display","block");
+    }else{
+            $("#LOADER").css("display","none");
+    }
+}
+
+function toggleInputState(){
+    if($("#INPUT").hasClass('ui-disabled')){
+        $("#notation").slider('enable');
+        $("#source_language").selectmenu('enable');
+        $("#target_language").selectmenu('enable');
+        $("#INPUT").removeClass('ui-disabled');    
+
+        $("#TRANSLATE").button('enable');
+    }else{
+        $("#notation").slider('disable');
+        $("#source_language").selectmenu('disable');
+        $("#target_language").selectmenu('disable');
+        $("#INPUT").addClass('ui-disabled');    
+        $("#TRANSLATE").button("disable");    
+        
+    }
+}
+
