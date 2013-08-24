@@ -4,7 +4,48 @@
         /* Make sure you defined the correct path, which is related to
             the location of your file `my_css.css` */ 
     }
-    .punjabi{
+@font-face {
+    font-family: "hindi";
+    src: url("../fonts/hindi.ttf") format("truetype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+    }
+@font-face {
+    font-family: "tamil";
+    src: url("../fonts/tamil.ttf") format("truetype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+    }
+@font-face {
+    font-family: "telugu";
+    src: url("../fonts/telugu.ttf") format("truetype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+    }
+@font-face {
+    font-family: "urdu";
+    src: url("../fonts/urdu.ttf") format("truetype");   
+        /* Make sure you defined the correct path, which is related to
+            the location of your file `my_css.css` */ 
+    } 
+
+    .pun{
         font-family: "punjabi" !important; 
         font-size:30px;
     }
+    .tam{
+        font-family: "tamil" !important; 
+        font-size:30px;
+    }    
+    .hin{
+        font-family: "hindi" !important; 
+        font-size:30px;
+    }
+    .tel{
+        font-family: "telugu" !important; 
+        font-size:30px;
+    }    
+    .urd{
+        font-family: "urdu" !important; 
+        font-size:30px;
+    }         
